@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bglog"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/signinemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <EditText
+        android:id="@+id/signinpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/signuphint"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/signuphint"
+        android:textSize="23sp"
+        android:elevation="15dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinpwd"
+        tools:text="@string/signuphint" />
+
+    <Button
+        android:id="@+id/signinbutton"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/buttonsign"
+        android:elevation="15dp"
+        android:text="@string/sign_in"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/signuphint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinpwd" />
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="188dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/lets_get_placed"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/signinemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/emailicon"
+        android:layout_width="37dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="235dp"
+        android:src="@drawable/idicon"
+        app:layout_constraintBottom_toTopOf="@+id/signuphint"
+        app:layout_constraintEnd_toStartOf="@+id/signinemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <ImageView
+        android:id="@+id/pwdlogo"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintBottom_toTopOf="@+id/signuphint"
+        app:layout_constraintEnd_toStartOf="@+id/signinpwd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailicon"
+        app:srcCompat="@drawable/pwdicon" />
+
+</android.support.constraint.ConstraintLayout>

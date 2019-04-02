@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lets Get  Placed</string>
+    <string name="signuphint">Not a registerd user? Sign up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="lets_get_placed">Lets get placed</string>
+</resources>

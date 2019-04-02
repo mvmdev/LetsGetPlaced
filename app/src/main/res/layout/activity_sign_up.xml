@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglog"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/signuppwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupschno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="225dp"
+        android:ems="10"
+        android:hint="Scholar No"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupcgpa" />
+
+    <EditText
+        android:id="@+id/signupcgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="CGPA"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/signupschno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signuppwd" />
+
+    <EditText
+        android:id="@+id/signuppwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/signupcgpa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupEmail" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/buttonsign"
+        android:elevation="15dp"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupschno" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="213dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="cursive"
+        android:text="@string/lets_get_placed"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/signupEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/idlogo2"
+        android:layout_width="40dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/pwdlogo2"
+        app:layout_constraintEnd_toStartOf="@+id/signupEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/idicon" />
+
+    <ImageView
+        android:id="@+id/pwdlogo2"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cgpalogo"
+        app:layout_constraintEnd_toStartOf="@+id/signuppwd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idlogo2"
+        app:srcCompat="@drawable/pwdicon" />
+
+    <ImageView
+        android:id="@+id/cgpalogo"
+        android:layout_width="33dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/schnologo"
+        app:layout_constraintEnd_toStartOf="@+id/signupcgpa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwdlogo2"
+        app:srcCompat="@drawable/scoreicon" />
+
+    <ImageView
+        android:id="@+id/schnologo"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signupschno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cgpalogo"
+        app:srcCompat="@drawable/schnologo" />
+</android.support.constraint.ConstraintLayout>

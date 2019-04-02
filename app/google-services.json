@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "486392161941",
+    "firebase_url": "https://letsgetplaced-8aca5.firebaseio.com",
+    "project_id": "letsgetplaced-8aca5",
+    "storage_bucket": "letsgetplaced-8aca5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486392161941:android:66639d724a278472",
+        "android_client_info": {
+          "package_name": "com.ammar.letsgetplaced"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486392161941-lnn4g36hmdeth2798msuvbplttv541p0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ammar.letsgetplaced",
+            "certificate_hash": "a2e2c69e14495ab40f32b7fe2cba310e4a318e1b"
+          }
+        },
+        {
+          "client_id": "486392161941-7oabfch2j6c16h3akpkquk8tlmlhq9k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqdePH_teFjxizgsZPDzwzzZUHM2-lsrE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486392161941-7oabfch2j6c16h3akpkquk8tlmlhq9k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
