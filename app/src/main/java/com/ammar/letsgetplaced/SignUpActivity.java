@@ -93,22 +93,22 @@ public class SignUpActivity extends AppCompatActivity {
     private void addToGroup(String cgpa) {
         float grade = Float.parseFloat(cgpa);
 
-        if(grade > 9.0){
+        if(grade >= 9.0){
             FirebaseMessaging.getInstance().subscribeToTopic("above9");
         }
-        if(grade > 8.5){
+        if(grade >= 8.5){
             FirebaseMessaging.getInstance().subscribeToTopic("above8.5");
         }
-        if(grade > 8.0){
+        if(grade >= 8.0){
             FirebaseMessaging.getInstance().subscribeToTopic("above8");
         }
-        if(grade > 7.5){
+        if(grade >= 7.5){
             FirebaseMessaging.getInstance().subscribeToTopic("above7.5");
         }
-        if(grade > 7.0){
+        if(grade >= 7.0){
             FirebaseMessaging.getInstance().subscribeToTopic("above7");
         }
-        if(grade > 6.5){
+        if(grade >= 6.5){
             FirebaseMessaging.getInstance().subscribeToTopic("above6.5");
         }
         if(grade > 6.0){
