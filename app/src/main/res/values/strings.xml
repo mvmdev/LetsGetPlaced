@@ -4,4 +4,7 @@
     <string name="sign_in">Sign In</string>
     <string name="lets_get_placed">Lets get placed</string>
     <string name="goldstr">Goldman Sachs is one of the world’s biggest financial groups, which provides a variety of financial services, such as investment management, banking, securities, etc.</string>
+    <string name="jpmc"><![CDATA[JPMorgan Chase & Co. is a leading global financial services firm and one of the largest banking institutions in the United States, with operations worldwide.]]></string>
+    <string name="amazons">Amazon.com, Inc., is an American multinational technology company based in Seattle, Washington that focuses in e-commerce, cloud computing, and artificial intelligence.</string>
+    <string name="samsungs">Samsung Group is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul.[3] It comprises numerous affiliated businesses,[3] most of them united under the Samsung brand.</string>
 </resources>
