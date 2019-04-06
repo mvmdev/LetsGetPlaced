@@ -80,7 +80,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ObjectAnimator flip = ObjectAnimator.ofFloat(view, "rotationX", 0f, 360f);
-                flip.setDuration(3000);
+                flip.setDuration(300);
                 flip.start();
                 mUpdateTimeTask = new Runnable() {
                     public void run() {
