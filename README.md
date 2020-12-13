@@ -4,7 +4,7 @@ Project Plan: Let’s get placed
 1. Introduction
 
      This document lays out a project plan for the development of “ Let’s get placed”
-     open source repository system by Mayank Verma.
+     open source repository system by Mayank Verma and Ammar Alavi.
 
 2. Overview
 
@@ -32,4 +32,4 @@ Project Plan: Let’s get placed
 
 2.4 Development Responsibility
 
-     I Mayank Verma developed the software.
+     We Mayank Verma and Ammar Alavi developed the software.
